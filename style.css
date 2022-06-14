@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  background-color: transparent;
+  border: 1px solid #a87b62;
+  color: #a87b62;
+  cursor: pointer;
+}
+.game-container {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-container h2 {
+  text-align: center;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+.controls input[type="number"] {
+  border: none;
+}
+.controls label {
+  display: block;
+}
+.grid {
+  flex-grow: 1;
+  overflow: auto;
+}
+.cells-container {
+  display: grid;
+  gap: 5px;
+  justify-items: center;
+}
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #a87b62;
+  border-radius: 50%;
+}
+.cell-alive {
+  background-color: #48bd48;
+}
+.indicator {
+  color: #a87b62;
+  display: contents;
+}
+.result-string {
+  margin-bottom: 10px;
+}
